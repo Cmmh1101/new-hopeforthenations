@@ -1,0 +1,108 @@
+:root {
+  --light-gray: #f3f3f3;
+  --dark-grey: #283747;
+  --green-color: #035e21;
+  --dark-text: #383b42;
+  --dark-blue: #2e3192;
+  --light-blue: #009db7;
+  --mid-aqua: #1dd0d8;
+  --light-aqua: #7ae3f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation */
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.img-logo {
+  width: 100px;
+}
+
+/* Jumbotron Hero */
+
+.hero {
+  height: 100vh;
+  position: relative;
+  background-image: url(/img/heroimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  overflow: hidden;
+}
+
+.hero-text {
+  background-color: #f1f1f1af;
+  border-radius: 10px;
+}
+
+.waves-divider {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+/* Get involved */
+
+.get-involved a {
+  color: var(--dark-text);
+  text-decoration: none;
+}
+
+.involve-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /* margin: 3rem 5rem; */
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px 0px #000000;
+  box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.get-involved a img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.get-involved a:hover img {
+  transform: scale(1.1);
+}
+
+/* gallery */
+
+.jumbotron .box {
+  height: 300px;
+}
+
+.jumbotron .box img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Programs */
+
+.program-box {
+  width: 400px;
+}
+.program-box {
+  width: 100%;
+}
+
+.program-box .program img {
+  width: 300px;
+  border-radius: 10px;
+}
