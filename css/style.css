@@ -46,6 +46,7 @@ body {
 }
 
 .hero-text {
+  width: auto;
   background-color: #f1f1f1af;
   border-radius: 10px;
 }
@@ -54,6 +55,8 @@ body {
   position: absolute;
   bottom: -20px;
   left: 0;
+  max-height: 300px;
+  z-index: 5;
 }
 
 /* Get involved */
@@ -96,13 +99,23 @@ body {
 /* Programs */
 
 .program-box {
-  width: 400px;
-}
-.program-box {
   width: 100%;
 }
 
 .program-box .program img {
-  width: 300px;
+  width: 100%;
   border-radius: 10px;
+}
+
+/* Bible quote section */
+
+.quote-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer */
+
+.social-icons a i {
+  font-size: 3rem;
 }
