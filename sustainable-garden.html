@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- build:css css/main.css -->
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -28,7 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
       rel="stylesheet"
     />
-    <title>Hope For The Nations</title>
+    <title>Sustainable Community Garden | Hope For The Nations</title>
   </head>
   <body>
     <!-- navigation -->
@@ -53,16 +54,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-info" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-info" href="donate.html">Donate</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-info" href="about-us.html">About Us</a>
+            <li class="nav-item active">
+              <a class="nav-link text-info active" href="about-us.html"
+                >About Us <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -108,13 +109,20 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid hero m-0 d-flex align-items-center">
       <div class="container my-5">
-        <div class="row mt-5">
-          <div class="col-8 hero-text mt-5 p-3">
-            <h1 class="display-4 my-2">Hope For The Nations</h1>
-            <p class="lead">Blessing our communities with love and hope</p>
-            <a class="btn btn-primary my-2" href="#getinvolved">Get Involved</a>
+        <div class="row hero-text-container">
+          <div class="col-8 hero-text-dark-bg mt-5 p-3">
+            <h1 class="display-4 my-2">Sustainable Community Garden</h1>
+            <p class="lead"></p>
+            <!-- <a class="btn btn-primary my-2" href="#getinvolved">Get Involved</a> -->
           </div>
         </div>
+      </div>
+      <div class="hero-background">
+        <img
+          class="img-fluid w-100"
+          src="img/volunteers.png"
+          alt="Venezuelan Hope For The Nation volunteers"
+        />
       </div>
       <img
         class="waves-divider"
@@ -126,153 +134,130 @@
     <!-- End of jumbotron -->
 
     <main>
-      <div class="container my-5">
-        <!-- Get involved area -->
-        <div class="row my-5">
-          <div class="col col-lg-10 my-5 mx-auto">
-            <div class="col-12 my-5">
-              <div class="title">
-                <h2>Would you like to get involved?</h2>
-              </div>
-            </div>
-            <div class="row my-3 my-md-5">
-              <div class="col-md-6 involve-area">
-                <div
-                  class="get-involved d-flex justify-content-center flex-column"
-                >
-                  <div class="donate-area mx-auto my-3 my-md-5">
-                    <a
-                      class="
-                        d-flex
-                        justify-content-center
-                        flex-column
-                        text-center
-                      "
-                      href="https://www.paypal.com/donate?token=c2SFL-9YZ8H8onMtVQ1JwpfD5SUmCxviAGq54JlaO4m06Y1iPBJgf21tfD4zcWAdVTNHv8B22OOrgtsR"
-                      target="_blank"
-                    >
-                      <div class="involve-img">
-                        <img
-                          src="/img/donate.png"
-                          alt="Lady holding a donation box"
-                        />
-                      </div>
-                      <h3 class="my-5">Donate</h3>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 involve-area">
-                <div
-                  class="get-involved d-flex justify-content-center flex-column"
-                >
-                  <div class="donate-area text-center mx-auto my-3 my-md-5">
-                    <a class="disabled" href="#" target="_blank">
-                      <div class="involve-img Volunteer">
-                        <img
-                          src="/img/volunteer.png"
-                          alt="Group of volunteers"
-                        />
-                      </div>
-                      <h3 class="my-5">Volunteer</h3>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- gallery -->
-      <div class="jumbotron jumbotron-fluid bg-light m-0 p-0">
-        <!-- <div class="title container mb-5">
-          <h2>Latest Projects</h2>
-        </div> -->
-        <div class="row m-0">
-          <div class="col-6 col-md-4 m-0 p-0">
-            <div class="box">
-              <img
-                class="img-fluid"
-                src="/img/hunger2.png"
-                alt="Hunger relief program photo"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-4 m-0 p-0">
-            <div class="box">
-              <img
-                class="img-fluid"
-                src="/img/farming4.png"
-                alt="Sustainable community garden program photo"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-4 m-0 p-0">
-            <div class="box">
-              <img
-                class="img-fluid"
-                src="/img/farming1.png"
-                alt="Sustainable work program photo"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-4 m-0 p-0">
-            <div class="box">
-              <img
-                class="img-fluid"
-                src="/img/sports3.png"
-                alt="Sustainable work program photo"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-4 m-0 p-0">
-            <div class="box">
-              <img
-                class="img-fluid"
-                src="/img/sustainableposter.png"
-                alt="Sustainable work program photo"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-4 m-0 p-0">
-            <div class="box">
-              <img
-                class="img-fluid"
-                src="/img/sustainable.png"
-                alt="Sustainable work program photo"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- About us -->
       <div class="container my-5">
         <div class="row my-5">
           <div class="col col-lg-10 my-5 mx-auto">
-            <div class="title my-5">
-              <h2>About Us</h2>
+            <div class="my-5">
+              <h2>Sustainable Community Garden</h2>
             </div>
             <div class="about-area">
+              <div class="col-6 float-right ml-3 mb-3">
+                <img
+                  class="text-wrap-img shadow"
+                  src="img/volunteers.png"
+                  alt=""
+                />
+              </div>
               <div class="about-text">
-                <h3 class="my-3">Mission</h3>
                 <p class="my-3">
-                  Hope for the Nations is a non-profit, Christian organization.
-                  We count on a ministry of ambassadors that serves children,
-                  older people, and families in Venezuela’s most impoverished
-                  area. As we help them, we bring the gospel nurturing not only
-                  with physical needs but we spiritual needs as well.
+                  Hope for the Nations Urban gardens are intended to support
+                  communities to take advantage of the resources found in the
+                  same area. These crops allow the communities to supply
+                  themselves with fruits, vegetables, at a low cost.
                 </p>
-                <h3 class="my-3">Vision</h3>
                 <p class="my-3">
-                  All these projects aim to help people be sustainable because
-                  we do not want to treat the problem; we are looking for
-                  long-term solutions.
+                  These gardens help to provide a job and food to families that
+                  are living in underprivileged circumstances. This project
+                  works together with raising chickens because chickens benefit
+                  the gardening in a natural way, plus it is another food source
+                  for the community. We link the urban farm “Landmark” located
+                  in the downtown Memphis Tennessee with the farmers, in
+                  Venezuela.
                 </p>
-                <a href="about.html" class="btn btn-primary my-3">Learn More</a>
+                <p class="my-3">
+                  These knowledgeable farmers and experts in urban gardens. They
+                  are collaborating and teaching how to preserve products for a
+                  long term, how to dehydrate medicinal plants, and the
+                  productions of teas. With their help allows our team to learn
+                  more sustainable methods of food production, motivate the
+                  people of all ages to take interest in growing food in our
+                  communities and share the joy and connection through the Word
+                  of God.
+                </p>
+                <span class="spam-bold text-info"
+                  ><em
+                    >This project will build community-managed organic
+                    vegetables and medicinal plant nurseries, giving the
+                    community access to a sustainable source of income.<br />
+                    <br />After the harvest, food can be shared among gardeners
+                    and their families, and the remaining produce will be for
+                    sale to the local community and surrounding markets.Each
+                    harvest not only provides members of the cooperative with
+                    food, but that food is nutritionally diverse.</em
+                  ></span
+                ><br />
+
+                <a href="https://paypal.com" class="btn btn-primary my-5"
+                  >Donate</a
+                >
+              </div>
+            </div>
+            <!-- gallery -->
+            <div class="jumbotron jumbotron-fluid bg-light m-0 p-0">
+              <!-- <div class="title container mb-5">
+          <h2>Latest Projects</h2>
+        </div> -->
+              <div class="row m-0">
+                <div class="col-6 col-md-4 m-0 p-0">
+                  <div class="box">
+                    <img
+                      class="img-fluid"
+                      src="/img/hunger2.png"
+                      alt="Hunger relief program photo"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 m-0 p-0">
+                  <div class="box">
+                    <img
+                      class="img-fluid"
+                      src="/img/farming4.png"
+                      alt="Sustainable community garden program photo"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 m-0 p-0">
+                  <div class="box">
+                    <img
+                      class="img-fluid"
+                      src="/img/farming1.png"
+                      alt="Sustainable work program photo"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 m-0 p-0">
+                  <div class="box">
+                    <img
+                      class="img-fluid"
+                      src="/img/sports3.png"
+                      alt="Sustainable work program photo"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 m-0 p-0">
+                  <div class="box">
+                    <img
+                      class="img-fluid"
+                      src="/img/sustainableposter.png"
+                      alt="Sustainable work program photo"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 m-0 p-0">
+                  <div class="box">
+                    <img
+                      class="img-fluid"
+                      src="/img/sustainable.png"
+                      alt="Sustainable work program photo"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row my-5"></div>
       </div>
       <!-- Programs -->
       <section class="bg-info pt-5 overflow-hidden">
@@ -291,7 +276,6 @@
                   d-flex
                   justify-content-center
                   align-items-center
-                  flex-wrap
                 "
               >
                 <div class="col-8 col-sm-6 col-lg-4 mb-5 program-box">
@@ -351,7 +335,7 @@
         <div class="bg-primary py-5 quote-section">
           <!--  Bible section -->
           <div class="container">
-            <div class="row mb-5">
+            <div class="row mb-2">
               <div
                 id="ourmanna-verse"
                 class="col-lg-10 mx-auto section5 my-5 text-info text-center"
@@ -364,7 +348,13 @@
               ></script>
             </div>
           </div>
-
+          <div class="col-6 mx-auto mb-5">
+            <img
+              class="bible-img"
+              src="img/open-bible.png"
+              alt="Open bible silhouete"
+            />
+          </div>
           <!-- End of bible section -->
           <img
             class="waves-divider mt-5"
@@ -389,6 +379,7 @@
               flex-column
               mx-auto
               justify-content-center
+              align-items-center
             "
           >
             <a href="#" class="d-flex justify-content-center"
@@ -400,7 +391,14 @@
             <a href="#" class="btn btn-primary">Donate</a>
           </div>
           <div
-            class="col-6 col-md-3 my-5 d-flex mx-auto justify-content-center"
+            class="
+              col-6 col-md-3
+              my-5
+              d-flex
+              mx-auto
+              justify-content-center
+              small
+            "
           >
             <div>
               <h5>Useful Links</h5>
@@ -425,7 +423,14 @@
             </div>
           </div>
           <div
-            class="col-6 col-md-3 my-5 d-flex mx-auto justify-content-center"
+            class="
+              col-6 col-md-3
+              my-5
+              d-flex
+              mx-auto
+              justify-content-center
+              small
+            "
           >
             <div>
               <h5>Programs</h5>
@@ -491,7 +496,7 @@
           </div>
         </div>
       </div>
-      <div class="text-center">
+      <div class="text-center small">
         2021© Hope For The Nations | Powered by
         <a href="https://carlamontano.tech">Carla Montano </a>
       </div>
@@ -506,6 +511,7 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
     <script src="js/app.js"></script>
+    <script src="js/tabs.js"></script>
     <!-- endbuild -->
   </body>
 </html>
