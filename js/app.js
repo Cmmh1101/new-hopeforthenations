@@ -1,3 +1,27 @@
+// Content container appears
+const content = document.querySelectorAll(".content-container");
+
+window.addEventListener("scroll", easeContent);
+
+function easeContent() {
+  const bottomOfPage = window.innerHeight * 0.8;
+
+  content.forEach(function (contents) {
+    const topOfContent = contents.getBoundingClientRect().top;
+    // ternary operators
+    // condition ? do this : do that
+    // topOfContent < bottomOfPage
+    //   ? contents.classList.add("appear")
+    //   : contents.classList.remove("appear");
+
+    if (topOfContent < bottomOfPage) {
+      contents.classList.add("appear");
+    } else {
+      contents.classList.remove("appear");
+    }
+  });
+}
+
 //  scroll down hide navbar - scroll up show navbar
 
 var prevScrollpos = window.pageYOffset;
